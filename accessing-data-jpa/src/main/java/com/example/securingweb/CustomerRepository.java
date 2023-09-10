@@ -1,4 +1,4 @@
-package com.example.accessingdatajpa;
+package com.example.securingweb;
 
 import java.util.List;
 
