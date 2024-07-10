@@ -25,7 +25,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootTest
-//@Disabled // disabled because only works when app https://github.com/ashburnere/spring-quoters is running on http://localhost:8080/
+@Disabled // disabled because only works when app https://github.com/ashburnere/spring-quoters is running on http://localhost:8080/
 public class ConsumingRestApplicationTest {
 
     @Autowired
