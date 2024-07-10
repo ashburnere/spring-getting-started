@@ -18,11 +18,13 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
-	//implementation("org.springframework.boot:spring-boot-starter-security")
-	// 	//  Temporary explicit version to fix Thymeleaf bug
-	//implementation("org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.1.1.RELEASE")
-	//testImplementation("org.springframework.security:spring-security-test")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	// enable security by adding these 3 dependencies to the classpath
+	implementation("org.springframework.boot:spring-boot-starter-security")
+	// temporary explicit version to fix Thymeleaf bug
+	implementation("org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.1.1.RELEASE")
+	testImplementation("org.springframework.security:spring-security-test")
+
 }
 
 tasks.withType<Test> {
